@@ -1,5 +1,5 @@
 # swagger demo
-> swagger(openApi) template로 사용할 demo 입니다.
+> swagger(openApi) template으로 사용할 demo 입니다.
 
 
 # spec
