@@ -1,0 +1,21 @@
+server:
+  port: 8080
+
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    operations-sorter: alpha #api 및 태그 정렬 기준을 알파벳 오름차순
+    tags-sorter: alpha #api 및 태그 정렬 기준을 알파벳 오름차순
+    path: /swagger-ui
+    disable-swagger-default-url: true #swagger-ui default url인 petstore html 문서 비활성화 여부
+    default-model-expand-depth: 10
+    display-request-duration: true  # try it out 을 했을 때 request duration 을 추가로 찍어줌
+    docExpansion: none
+  show-actuator: true
+  use-fqn: true #패키지를 포함한 이름
+  #Media Type 기본 값을 application/json
+  default-consumes-media-type: application/json;charset=UTF-8
+  default-produces-media-type: application/json;charset=UTF-8
+  cache:
+    disabled: true
